@@ -1,0 +1,15 @@
+{
+  "build": "Release_2.5.1",
+  "totalTests": 120,
+  "passed": 108,
+  "failed": 12,
+  "defects": 9,
+  "criticalDefects": 3,
+  "avgExecutionSec": 1340,
+  "modules": {
+    "Login": {"passed": 15, "failed": 0},
+    "Checkout": {"passed": 20, "failed": 5},
+    "Search": {"passed": 30, "failed": 1},
+    "Reports": {"passed": 25, "failed": 4}
+  }
+}
