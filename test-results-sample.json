@@ -1,0 +1,11 @@
+{
+  "suite": "Regression Suite – Sprint 18",
+  "total": 50,
+  "passed": 44,
+  "failed": 6,
+  "avgDurationSec": 1280,
+  "defects": [
+    {"id": "BUG-1021", "module": "Login", "severity": "Critical"},
+    {"id": "BUG-1047", "module": "Checkout", "severity": "Major"}
+  ]
+}
