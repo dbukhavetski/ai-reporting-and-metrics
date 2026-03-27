@@ -1,0 +1,3 @@
+I would implement an automated post-deploy quality gate in UAT that compares the next regression run against a baseline and automatically blocks or rolls back the feature flag if failures, flakes, retries, or execution time exceed agreed thresholds.
+
+The reason is visible in qa-multisignal-data.json, qa-multisignal-data.json, and qa-multisignal-data.json: the degradation kept worsening across consecutive UAT runs, but there was no control stopping exposure after the first regression signal. A QA/SDET-owned gate would have caught that jump early and contained the issue before it spread across multiple runs.
