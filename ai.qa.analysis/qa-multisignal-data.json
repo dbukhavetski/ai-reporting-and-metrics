@@ -1,0 +1,17 @@
+{
+  "runs": [
+    {"id": "run-41", "env": "DEV", "fail": 20, "flake": 8, "retries": 14, "avgTime": 850, "slowest": 2890, "flags": []},
+    {"id": "run-42", "env": "UAT", "fail": 50, "flake": 15, "retries": 22, "avgTime": 870, "slowest": 3200, "flags": ["jwt_refresh_v2"]},
+    {"id": "run-43", "env": "UAT", "fail": 70, "flake": 22, "retries": 30, "avgTime": 890, "slowest": 3550, "flags": ["jwt_refresh_v2"]},
+    {"id": "run-44", "env": "UAT", "fail": 80, "flake": 30, "retries": 40, "avgTime": 920, "slowest": 3750, "flags": ["jwt_refresh_v2"]},
+    {"id": "run-45", "env": "PROD", "fail": 10, "flake": 4, "retries": 6, "avgTime": 845, "slowest": 2860, "flags": []}
+  ],
+  "deployments": [
+    {"env": "UAT", "service": "Auth", "change": "jwt_refresh_v2 rollout", "timeUTC": "03:10"},
+    {"env": "DEV", "service": "Orders", "change": "DB pool size increase", "timeUTC": "11:20"}
+  ],
+  "infraAlerts": [
+    {"env": "UAT", "system": "Redis", "cpu": "85%", "time": "03:15"},
+    {"env": "UAT", "system": "Redis", "cpu": "90%", "time": "04:40"}
+  ]
+}
